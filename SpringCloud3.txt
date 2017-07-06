@@ -1,0 +1,8 @@
+使用一个服务注册中心，然后部署两个应用（服务提供者）。然后再配置一个服务消费者。
+服务消费由Ribbon完成。它来调用应用提供的/hello的接口。
+--server.port=8082
+--server.port=8081
+分别配置运行的参数Arguments来使用一个project工程部署两个应用。
+用浏览器访问http://localhost:9000/ribbon-consumer可以得到Ribbon调用/hello接口的结果
+
+ribbon中的配置properties中只用留一个1111的端口的就行。

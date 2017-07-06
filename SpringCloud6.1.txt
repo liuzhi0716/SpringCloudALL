@@ -1,0 +1,7 @@
+对应为第七章的Spring Cloud Zuul的API网关服务——请求路由。
+开启一个服务注册中心，然后部署1或2个应用（服务提供者）。然后再配置一个服务消费者。
+服务消费由Feign完成
+这次不需要配置其他端口了，就用默认的8080端口。
+分别配置运行的参数Arguments来使用一个project工程部署两个应用。
+用浏览器访问localhost:5555/api-a-url/hello可以得到转发的结果。
+localhost:5555/api-a-url/hello会被转发到localhost:8080/hello上
